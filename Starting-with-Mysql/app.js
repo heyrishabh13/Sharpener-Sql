@@ -18,7 +18,7 @@ connection.connect((err) => {
 
   console.log("Connection created successfully");
 
-  const creationQuery = `create table Students      (
+  const creationQuery = `create table Students        (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(20),
   email VARCHAR(20)
