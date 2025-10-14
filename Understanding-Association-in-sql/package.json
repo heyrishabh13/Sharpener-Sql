@@ -1,0 +1,26 @@
+{
+  "name": "sharpener-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test spcecified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyrishabh13/Sharpener-Sql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/heyrishabh13/Sharpener-Sql/issues"
+  },
+  "homepage": "https://github.com/heyrishabh13/Sharpener-Sql#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.15.2",
+    "sequelize": "^6.37.7"
+  }
+}

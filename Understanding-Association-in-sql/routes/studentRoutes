@@ -1,0 +1,15 @@
+const express = require("express");
+const studentController = require("../controllers/studentController");
+
+const router = express.Router();
+
+router.post(
+  "/addingStudentWithCard",
+  studentController.addingValuesToStudentAndIdentityCardTable
+);
+router.post(
+  "/addingStudentWithPost",
+  studentController.addingValuesToStudentAndPostTable
+);
+
+module.exports = router;

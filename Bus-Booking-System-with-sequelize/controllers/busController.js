@@ -39,4 +39,6 @@ const getBusSeatData = async (req, res) => {
   }
 };
 
+
+
 module.exports = { addBus, getBusSeatData };
