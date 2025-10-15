@@ -3,6 +3,15 @@ const Students = require("../models/student");
 const IdentityCard = require("../models/identityCard");
 const Post = require("../models/post");
 
+const addValuesToStudentTable = async (req, res) => {
+  try {
+    const student = await Students.create(req.body);
+    res.status(201).json({ student });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 const addingValuesToStudentAndIdentityCardTable = async (req, res) => {
   try {
     const student = await Students.create(req.body.student);
@@ -32,4 +41,5 @@ const addingValuesToStudentAndPostTable = async (req, res) => {
 module.exports = {
   addingValuesToStudentAndIdentityCardTable,
   addingValuesToStudentAndPostTable,
+  addValuesToStudentTable,
 };

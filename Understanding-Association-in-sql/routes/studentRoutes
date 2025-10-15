@@ -11,5 +11,6 @@ router.post(
   "/addingStudentWithPost",
   studentController.addingValuesToStudentAndPostTable
 );
+router.post("/addStudent", studentController.addValuesToStudentTable);
 
 module.exports = router;
