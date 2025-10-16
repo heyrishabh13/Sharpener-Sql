@@ -15,7 +15,8 @@ const getAllBookings = async (req, res) => {
   try {
     const { id } = req.params;
     const bookings = await Bookings.findAll({
-      where: { id: id },
+      where: { userId: id },
+      attributes: { exclude: ["userId", "busId"] },
       include: [{ model: Buses, attributes: ["busNumber"] }],
     });
     res.status(200).json(bookings);
